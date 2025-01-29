@@ -1,0 +1,6 @@
+The bucket index is calculated using the hash code of the key in combination with the size of the hash table. The general formula is:
+bucket index=hash(key) % table size
+
+
+In Java's HashMap, the formula is optimized as:
+bucket index=(hash(key)&(table size−1))
